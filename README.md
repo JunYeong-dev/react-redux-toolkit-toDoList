@@ -1,6 +1,6 @@
 React - Redux - Toolkit - To do List
 
-npx create-react-app react-redux
+npx create-react-app react-redux-toolkit-todolist
 
 yarn add redux
 
