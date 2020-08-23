@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { actionCreators } from "../store";
+import { add } from "../store";
 import ToDo from "../components/ToDo.js";
 
 function Home({ toDos, addToDo }){
@@ -33,8 +33,8 @@ function mapStateToProps(state, ownProps){
 
 function mapDispathToProps(dispatch){
     return {
-        // addToDo라는 이름의 함수를 return함, 이 함수는 dispatch를 사용 
-        addToDo: text => dispatch(actionCreators.addToDo(text))
+        // createSlice로 만든 add함수를 return함
+        addToDo: text => dispatch(add(text))
      }
 }
 
